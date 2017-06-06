@@ -1,0 +1,27 @@
+{
+  "name": "partitionPost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-unit": "tape src/partitioning.spec.js",
+    "test-e2e": "tape src/partitioning.e2e.spec.js",
+    "test": "npm run test-unit && npm run test-e2e",
+    "setup": "node script/setupDb.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dedent": "^0.7.0",
+    "dotenv": "^4.0.0",
+    "knex": "^0.13.0",
+    "lodash": "latest",
+    "moment": "^2.18.1",
+    "mysql": "^2.13.0"
+  },
+  "devDependencies": {
+    "sinon": "^2.3.1",
+    "tape": "^4.6.3"
+  }
+}
